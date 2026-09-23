@@ -2,7 +2,7 @@
 morseCode = {}
 
 # Dictionary til oversættelse fra morsekode til bogstaver. Tomt oversættes til mellemrum.
-morseCodeReverse = {'.-':'a','-...':'b','-.-.':'c','-..':'d','.':'e',}
+morseCodeReverse = {'.-':'a','-...':'b','-.-.':'c','-..':'d','.':'e',} 4r
 
 # Denne funktion oversætter et enkelt bogstav (letter) med opslag i dictionay (code) hvis muligt
 def translate(letter, code):

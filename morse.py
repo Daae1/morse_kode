@@ -27,12 +27,10 @@ morseCode = {'a':'.-'
     ,'z':'--..'
     ,'æ':'.-.-'
     ,'ø':'---.'
-    ,'å':'.--.-'
-             }
+    ,'å':'.--.-'}
 
 # Dictionary til oversættelse fra morsekode til bogstaver. Tomt oversættes til mellemrum.
-morseCodeReverse = {
-    '.-':'a',
+morseCodeReverse = {'.-':'a',
     '-...':'b',
     '-.-.':'c',
     '-..':'d',

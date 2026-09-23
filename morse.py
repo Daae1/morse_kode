@@ -63,6 +63,7 @@ morseCodeReverse = {'.-':'a',
 # Denne funktion oversætter et enkelt bogstav (letter) med opslag i dictionay (code) hvis muligt
 def translate(letter, code):
     letter = letter.lower()
+    # det gøre så alle bogstaver er i lowercase
     if letter in code:
         return code[letter]
     else:

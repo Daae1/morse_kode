@@ -65,7 +65,9 @@ def translate(letter, code):
     letter = letter.lower()
     if letter in code:
         return code[letter]
-print(translate('Q', morseCode))
+    else:
+        return '?'
+print(translate('*', morseCode))
 
 # Denne funktion oversætter en vilkårlig tekststreng til morsekode
 # '/' markerer nyt bogstav

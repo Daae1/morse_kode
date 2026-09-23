@@ -62,9 +62,10 @@ morseCodeReverse = {'.-':'a',
 
 # Denne funktion oversætter et enkelt bogstav (letter) med opslag i dictionay (code) hvis muligt
 def translate(letter, code):
+    letter = letter.lower()
     if letter in code:
         return code[letter]
-print(translate('a', morseCode))
+print(translate('Q', morseCode))
 
 # Denne funktion oversætter en vilkårlig tekststreng til morsekode
 # '/' markerer nyt bogstav
@@ -77,3 +78,6 @@ def encodeMessage(message, code):
 # '//' markerer nyt ord
 def decodeMessage(message, code):
     pass
+
+
+

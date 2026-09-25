@@ -60,7 +60,8 @@ morseCodeReverse = {'.-':'a',
     '.-.-':'æ',
     '---.':'ø',
     '.--.-':'å',
-    ' ':''}
+    ' ':'',
+    '':' '}
 
 # Denne funktion oversætter et enkelt bogstav (letter) med opslag i dictionay (code) hvis muligt
 def translate(letter, code):
@@ -81,19 +82,20 @@ def encodeMessage(message, code):
         oversat += translate(letter, code)+'/'
     return oversat
 
-print (encodeMessage('to ghh kvk', morseCode))
+print (encodeMessage('viktors finger er længere end os', morseCode))
 
 # Denne funktion oversætter en korrekt formatteret morsebesked til bogstaver
 # '/' markerer nyt bogstav
 # '//' markerer nyt ord
 def decodeMessage(message, code):
     oversat = ''
+    message=message.split('/')
     for letter in message:
-        oversat += translate(letter, code) + '/'
+        oversat += translate(letter, code)
     return oversat
 
 
-print(encodeMessage('- .../---', morseCodeReverse))
+print(decodeMessage('...-/../-.-/-/---/.-./...//..-./../-./--././.-.//./.-.//.-../.-.-/-./--././.-././/./-./-..//---/.../', morseCodeReverse))
 
 
 

@@ -1,6 +1,4 @@
 # Dictionary til oversættelse fra bogstaver til morsekode
-# Vi har valgt at linjeskift efter hver bogstav, for at gøre det mere overskueligt
-# Her skriver man først bogstavet så : og hvad den skal oversættes til
 morseCode = {'a':'.-'
     ,'b':'-...'
     ,'c':'-.-.'
@@ -32,7 +30,6 @@ morseCode = {'a':'.-'
     ,'å':'.--.-'}
 
 # Dictionary til oversættelse fra morsekode til bogstaver. Tomt oversættes til mellemrum.
-# Her har vi gjort det samme som overnover, bare i reverse
 morseCodeReverse = {'.-':'a',
     '-...':'b',
     '-.-.':'c',
@@ -64,7 +61,6 @@ morseCodeReverse = {'.-':'a',
     '.--.-':'å',}
 
 # Denne funktion oversætter et enkelt bogstav (letter) med opslag i dictionay (code) hvis muligt
-# Her translater den et bogstav fra dictionary om til koden hvis den ikke er der returner den ?
 def translate(letter, code):
     letter = letter.lower()
     # det gøre så alle bogstaver er i lowercase
@@ -80,6 +76,11 @@ print(translate('*', morseCode))
 def encodeMessage(message, code):
 
 
+t ='ting'
+   oversæt=''
+for letter in t:
+    print(letter)
+    oversæt=oversæt+
 
 # Denne funktion oversætter en korrekt formatteret morsebesked til bogstaver
 # '/' markerer nyt bogstav

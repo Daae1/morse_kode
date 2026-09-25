@@ -74,13 +74,12 @@ print(translate('*', morseCode))
 # '/' markerer nyt bogstav
 # '//' markerer nyt ord
 def encodeMessage(message, code):
+    oversat = ''
+    for letter in message:
+        oversat += translate(letter, code)+'/'
+        return oversat
 
-
-t ='ting'
-   oversæt=''
-for letter in t:
-    print(letter)
-    oversæt=oversæt+
+print (encodeMessage('', morseCode))
 
 # Denne funktion oversætter en korrekt formatteret morsebesked til bogstaver
 # '/' markerer nyt bogstav

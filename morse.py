@@ -66,7 +66,7 @@ morseCodeReverse = {'.-':'a',
 def translate(letter, code):
     letter = letter.lower()
     # det gøre så alle bogstaver er i lowercase, det er der for at gøre alle bogstaver der bliver sat ind til et lille
-    # # bogstav så vorse dic kan aflæse det siden den kun indholder små bogstaver og kan derfor kun aflæse dem.
+    # bogstav så vorse dic kan aflæse det siden den kun indholder små bogstaver og kan derfor kun aflæse dem.
     if letter in code:
         return code[letter]
     else:

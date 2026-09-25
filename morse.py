@@ -62,7 +62,8 @@ morseCodeReverse = {'.-':'a',
     '.--.-':'å',
     ' ':'',
     '':' '}
-
+# i denne funktion har vi brugt (letter, code) til at gøre alle bogstaver der bliver sat ind til et lille
+# bogstav så vorse dic kan aflæse det siden den kun indholder små bogstaver og kan derfor kun aflæse dem.
 # Denne funktion oversætter et enkelt bogstav (letter) med opslag i dictionay (code) hvis muligt
 def translate(letter, code):
     letter = letter.lower()

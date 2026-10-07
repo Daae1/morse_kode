@@ -82,6 +82,7 @@ def encodeMessage(message, code):
         oversat += translate(letter, code)+'/'
     return oversat
 
+# printer vores encode morsekode
 print (encodeMessage('viktors finger er længere end os', morseCode))
 
 # Denne funktion oversætter en korrekt formatteret morsebesked til bogstaver
@@ -94,7 +95,7 @@ def decodeMessage(message, code):
         oversat += translate(letter, code)
     return oversat
 
-
+# printer vores decode morsekode
 print(decodeMessage('...-/../-.-/-/---/.-./...//..-./../-./--././.-.//./.-.//.-../.-.-/-./--././.-././/./-./-..//---/.../', morseCodeReverse))
 
 

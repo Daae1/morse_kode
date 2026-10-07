@@ -69,6 +69,7 @@ def translate(letter, code):
     # bogstav så vorse dic kan aflæse det siden den kun indholder små bogstaver og kan derfor kun aflæse dem.
     if letter in code:
         return code[letter]
+ # denne funktion udgiver et ? hvis den ikke kan genkende bogstav/symbol
     else:
         return '?'
 print(translate('*', morseCode))

@@ -91,6 +91,7 @@ print (encodeMessage('viktors finger er længere end os', morseCode))
 # '//' markerer nyt ord
 def decodeMessage(message, code):
     oversat = ''
+    # denne funktion opdeler vorse morsekode
     message=message.split('/')
     for letter in message:
         oversat += translate(letter, code)
